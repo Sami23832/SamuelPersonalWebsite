@@ -1,0 +1,25 @@
+.style-switcher { position:fixed; right:0; top:0; padding:15px; width:200px; border:1px solid var(--bg-black-50); background:var(--bg-black-100); z-index:101; border-radius:0 0 0 5px; transition:all 0.3s ease; transform:translateX(100%); }
+.style-switcher.open { transform:translateX(0); }
+.style-switcher .s-icon { position:absolute; height:40px; width:40px; text-align:center; font-size:18px; background:var(--bg-black-100); color:var(--text-black-900); right:100%; border:1px solid var(--bg-black-50); cursor:pointer; transition:all 0.3s ease; border-radius:50% 0 0 50%; display:flex; align-items:center; justify-content:center; }
+.style-switcher .s-icon:hover { color:var(--skin-color); }
+.style-switcher .style-switcher-toggler { top:10px; }
+.style-switcher .day-night { top:55px; }
+.style-switcher h4 { margin:0 0 10px; color:var(--text-black-700); font-size:15px; font-weight:600; text-transform:capitalize; }
+.style-switcher .colors { display:flex; flex-wrap:wrap; gap:8px; }
+.style-switcher .colors span { display:inline-block; height:30px; width:30px; border-radius:50%; cursor:pointer; transition:transform 0.3s ease; border:2px solid transparent; }
+.style-switcher .colors span:hover { transform:scale(1.2); }
+.style-switcher .color-1 { background:#ec1839; }
+.style-switcher .color-2 { background:#fa5b0f; }
+.style-switcher .color-3 { background:#37b182; }
+.style-switcher .color-4 { background:#1854b4; }
+.style-switcher .color-5 { background:#f021b2; }
+@media (max-width:767px) {
+  .style-switcher { width:175px; padding:12px; }
+  .style-switcher h4 { font-size:13px; }
+  .style-switcher .colors span { height:26px; width:26px; }
+  .style-switcher .s-icon { height:36px; width:36px; font-size:16px; }
+}
+@media (max-width:400px) {
+  .style-switcher { width:155px; padding:10px; }
+  .style-switcher .colors span { height:24px; width:24px; }
+}
